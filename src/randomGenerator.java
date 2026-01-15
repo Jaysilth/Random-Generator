@@ -1,41 +1,47 @@
-import java.util.Random;
+import java.util.Random; // Import Random class to generate random numbers
 
 public class randomGenerator {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
-        Random random = new Random();
+        Random random = new Random(); // Create Random object
+
         /*
-         this program has two codes the first generates 3 sets of random numbers
-         between 1 -10
+         This program contains two functionalities:
 
-         the second randomly generates heads or tails like flipping a coin
-
-
+         1. Generate 3 random numbers between 1 and 10
+         2. Simulate a coin flip (heads or tails)
         */
 
-      /*  int number1;
+        // -----------------------------
+        // Part 1: Random numbers
+        // -----------------------------
+        /*
+        int number1;
         int number2;
         int number3;
 
-
-        number1 = random.nextInt(1 , 10);
-        number2 = random.nextInt(1 , 10);
-        number3 = random.nextInt(1 , 10);// first number is inclusive the second is exclusive
+        // Generate random numbers
+        // nextInt(1,10) generates numbers from 1 (inclusive) to 10 (exclusive)
+        number1 = random.nextInt(1, 10);
+        number2 = random.nextInt(1, 10);
+        number3 = random.nextInt(1, 10);
 
         System.out.println(number1);
         System.out.println(number2);
-        System.out.println(number3); */
+        System.out.println(number3);
+        */
 
+        // -----------------------------
+        // Part 2: Coin flip simulation
+        // -----------------------------
         boolean isHeads;
 
-        isHeads = random.nextBoolean();
+        isHeads = random.nextBoolean(); // Randomly returns true or false
 
-        if (isHeads){
+        if (isHeads) {
             System.out.println("You got heads");
-        }else {
-            System.out.println("you got tails");
+        } else {
+            System.out.println("You got tails");
         }
-
-
     }
 }
